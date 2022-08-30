@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronômetro</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <div id="display">
+                <div id="years">
+                    <h1 class="value">0</h2>
+                    <span>Anos</span>
+                </div>
+                <div class="spacer"></div>
+                <div id="mounths">
+                    <h1 class="value">0</h2>
+                    <span>Meses</span>
+                </div>
+                <div class="spacer"></div>
+                <div id="days">
+                    <h1 class="value">0</h2>
+                    <span>Dias</span>
+                </div>
+                <div class="spacer"></div>
+                <div id="hours">
+                    <h1 class="value">0</h2>
+                    <span>Horas</span>
+                </div>
+                <div class="spacer"></div>
+                <div id="minutes">
+                    <h1 class="value">0</h2>
+                    <span>Minutos</span>
+                </div>
+                <div class="spacer"></div>
+                <div id="seconds">
+                    <h1 class="value">0</h2>
+                    <span>Segundos</span>
+                </div>
+            </div>
+            <div id="buttons">
+                <div><button onclick="Timer.start()">Iniciar</button></div>
+                <div><button onclick="Timer.pause()">Pausar</button></div>
+                <div><button onclick="Timer.restart()">Reiniciar</button></div>
+            </div>
+            <div id="inputs">
+                <div>
+                    <input type="number" min="0" value="0" id="years">
+                    <span style="text-align: center;">*anos</span>
+                </div>
+                <div>
+                    <input type="number" min="0" max="11" value="0" id="mounths">
+                    <span style="text-align: center;">*meses</span>
+                </div>
+                <div>
+                    <input type="number" min="0" max="29" value="0" id="days">
+                    <span style="text-align: center;">*dias</span>
+                </div>
+                <div>
+                    <input type="number" min="0" max="23" value="0" id="hours">
+                    <span style="text-align: center;">*horas</span>
+                </div>
+                <div>
+                    <input type="number" min="0" max="59" value="0" id="minutes">
+                    <span style="text-align: center;">*minutos</span>
+                </div>
+                <div>
+                    <input type="number" min="0" max="59" value="0" id="seconds">
+                    <span style="text-align: center;">*segundos</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

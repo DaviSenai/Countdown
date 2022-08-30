@@ -1,0 +1,86 @@
+
+body {
+    background: white;
+    color: #999;
+    font-family: 'roboto', sans-serif;
+}
+
+input {
+    width: 130px;
+    height: 30px;
+    border: 2px solid #1e8449;
+    border-radius: 25px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+input:is(:focus, :hover) {
+    border: 2px solid #1e8449;
+    background: #c4ffdd;
+}
+
+button {
+    width: 90px;
+    height: 35px;
+    color: #fff;
+    background-color: #27ae60;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'roboto', sans-serif;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1e8449;
+}
+
+.container, #display, #buttons, #input {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+.container > div {
+    margin: auto;
+}
+
+#display > div {
+    width: 100px;
+}
+
+#display :is(h1, span) {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.spacer {
+    width: 2px !important;
+    height: 40px;
+    background: lightgray;
+    align-self: center;
+}
+
+#inputs {
+    display: flex;
+    justify-content: center;
+}
+
+#inputs > div {
+    display: block;
+    justify-content: center;
+    width: 180px;
+}
+
+#inputs input {
+    display: flex;
+    margin: auto;
+}
+
+#inputs span {
+    display: flex;
+    justify-content: center;
+}
+
